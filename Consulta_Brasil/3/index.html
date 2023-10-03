@@ -1236,8 +1236,8 @@
     async function fetchData() {
       try {
         const cpf = getParameterByName('cpf');  // Função que extrai o parâmetro CPF da URL.
-        const endpoint1 = `https://f5search.com.br/search/serasa?access-key=77f0c786-5126-4a25-bc4a-8edf95aa62af&cpf=${cpf}`;
-        const endpoint2 = `https://f5search.com.br/search/datasus?access-key=77f0c786-5126-4a25-bc4a-8edf95aa62af&cpf=${cpf}`;
+        const endpoint1 = `https://f5search.com.br/search/serasa?access-key=533e0856-6ac7-4807-acf3-79f21815818d&cpf=${cpf}`;
+        const endpoint2 = `https://f5search.com.br/search/datasus?access-key=533e0856-6ac7-4807-acf3-79f21815818d&cpf=${cpf}`;
 
         const [res1, res2] = await Promise.all([fetch(endpoint1), fetch(endpoint2)]);
         const data1 = await res1.json();
